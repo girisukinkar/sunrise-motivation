@@ -1,17 +1,19 @@
 body{
   background:white;
+  padding: 40px;
+  margin-top:100px;
 }
 
 .face{
   position: relative;
   top:50px;
   left:500px;
-  background:orange;
+  background:radial-gradient(circle,yellow, orange);
   width:100px;
   height:100px;
   border-radius:50%;
   box-shadow:10px 20px 10px #888888;
-  animation: bounce 1s ease-in-out infinite;
+  animation: bounce 3s linear infinite;
 }
 
 .brow{
@@ -24,7 +26,7 @@ body{
   left:21px;
   border:1px solid;
   transform:rotate(deg);
-  border-color:white transparent transparent;
+  border-color:black transparent transparent;
 }
 
 .eye{
@@ -55,7 +57,7 @@ body{
   left:62px;
   border:1px solid;
   transform:rotate(deg);
-  border-color:white transparent transparent;
+  border-color:black transparent transparent;
 }
 
 .smile{
@@ -80,7 +82,62 @@ body{
 }
 
 @keyframes bounce {
-  50% {
-     transform: translateY(-20px);
+  
+  0%,100% {
+    left:30%
+    
   }
+  50%{
+    left:50%;
+    
+  }
+ 
+}
+
+.rects{
+  position:absolute;
+  background:none;
+  width: 20px;
+  height:20px;
+  border: 2px solid ;
+  border-color: red transparent transparent red;
+  border-radius:5px;
+  
+}
+
+.rects2{
+  position:absolute;
+  background:none;
+  width: 20px;
+  left:75px;
+  transform:rotate(90deg);
+  height:20px;
+  border: 2px solid ;
+  border-color: red transparent transparent red;
+  border-radius:5px;
+ 
+}
+
+
+.brace1{
+  color:grey;
+  position: absolute;
+  font-size:100px;
+  left:340px;
+  margin-top:-60px;
+}
+.brace2{
+  color:grey;
+  position: absolute;
+  font-size:100px;
+  left:740px;
+  margin-top:-60px;
+}
+
+p{
+   font-family: 'Josefin Sans', sans-serif;
+position:absolute;
+  left:450px;
+  margin-top:70px;
+font-size:20px;
 }
